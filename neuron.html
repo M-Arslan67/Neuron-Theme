@@ -1,0 +1,2830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        .main1 {
+            width: 100%;
+            height: 850px;
+            background-image: url(./h1-s1.jpg);
+            position: relative;
+        }
+
+        .uper-div1 {
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid red; */
+
+
+        }
+
+
+
+        .div-msgicon {
+            width: 500px;
+            height: 50px;
+            /* border: 1px solid aqua; */
+            margin: 2.5px;
+            padding: 1px;
+            margin-left: 50px;
+
+        }
+
+        .uper1 {
+            width: 250px;
+            height: 25px;
+            /* border: 1px solid green; */
+            margin-top: 10px;
+
+
+        }
+
+        #msg-icon1 {
+            color: white;
+        }
+
+        .para-icon1 {
+            color: white;
+            margin-top: -20px;
+            margin-left: 30px;
+        }
+
+        .para-icon1:hover {
+            cursor: pointer;
+            color: rgb(204, 204, 204);
+            transition: 0.36s;
+        }
+
+        .uper12 {
+            width: 200px;
+            height: 25px;
+            /* border: 1px solid yellow; */
+            margin-left: 270px;
+            margin-top: -25px;
+        }
+
+        #call-icon1 {
+            color: white;
+        }
+
+
+        .uper-icondiv1 {
+            width: 150px;
+            height: 40px;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 1250px;
+            top: 5px;
+
+        }
+
+        .para-call1 {
+            color: white;
+            margin-left: 30px;
+            margin-top: -20px;
+        }
+
+        .para-call1:hover {
+            cursor: pointer;
+            color: rgb(204, 204, 204);
+            transition: 0.36s;
+        }
+
+
+        #fb-icon1 {
+            color: white;
+            margin-top: 10px;
+            transition: 0.36s;
+
+        }
+
+        #fb-icon1:hover {
+            cursor: pointer;
+            color: rgb(204, 204, 204);
+            transition: 0.36s;
+        }
+
+        #g-icon1 {
+
+            color: white;
+            font-size: 20px;
+            margin-left: 10px;
+
+
+        }
+
+        #g-icon1:hover {
+            cursor: pointer;
+            color: rgb(204, 204, 204);
+            transition: 0.36s;
+        }
+
+        #tr-icon1 {
+
+            color: white;
+            margin-left: 10px;
+            padding: 1px;
+        }
+
+        #tr-icon1:hover {
+            cursor: pointer;
+            color: rgb(204, 204, 204);
+            transition: 0.36s;
+        }
+
+        #in-icon1 {
+            color: white;
+            margin-left: 10px
+        }
+
+        #in-icon1:hover {
+            cursor: pointer;
+            color: rgb(204, 204, 204);
+            transition: 0.36s;
+        }
+
+        .navbar1 {
+            width: 100%;
+            height: 90px;
+            /* border: 1px solid pink; */
+        }
+
+        .nav-img1 {
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .nav1 {
+            width: 800px;
+            height: 50px;
+            /* border: 1px solid white; */
+            margin-left: 600px;
+            margin-top: -55px;
+        }
+
+        .ul1 {
+            list-style: none;
+        }
+
+        .list1 {
+            display: inline-block;
+            margin-left: 40px;
+
+
+        }
+
+        .list1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+
+        }
+
+        .bagsearch-div1 {
+            width: 130px;
+            height: 30px;
+            /* border: 1px solid blue; */
+            margin-left: 660px;
+            margin-top: -20px;
+        }
+
+        .bag-div1 {
+            width: 40px;
+            height: 25px;
+            /* border: 1px solid white; */
+            margin-left: 20px;
+        }
+
+        #bag-icon1 {
+            color: white;
+        }
+
+        .search-div1 {
+            width: 40px;
+            height: 25px;
+            /* border: 1px solid white; */
+            margin-left: 80px;
+            margin-top: -25px;
+
+        }
+
+        #search-icon1 {
+            color: white;
+        }
+
+        .aimachine-div1 {
+            width: 550px;
+            height: 400px;
+            /* border: 1px solid white; */
+            margin-top: 150px;
+            margin-left: 50px;
+
+
+        }
+
+        .head-aimachine1 {
+            color: white;
+            font-size: 60px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+
+
+        }
+
+        .para-aimachine1 {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: Poppins, sans-serif;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .learnjoin1 {
+            width: 350px;
+            height: 60px;
+            /* border: 1px solid blue; */
+            margin-top: 50px;
+        }
+
+        .learn1 {
+            width: 160px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 30px;
+            background-color: white;
+        }
+
+        .para-learn1 {
+            color: rgb(3, 161, 249);
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .learn1:hover {
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.36s;
+        }
+
+        .learn1:hover .para-learn1 {
+            color: white;
+        }
+
+        .joinnow1 {
+
+            width: 160px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 30px;
+            margin-left: 180px;
+            margin-top: -50px;
+        }
+
+        .para-join1 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+
+        }
+
+        .joinnow1:hover {
+            background-color: white;
+            cursor: pointer;
+            transition: 0.36s;
+
+        }
+
+        .joinnow1:hover .para-join1 {
+            color: rgb(3, 161, 249);
+        }
+
+        .img-div1 {
+            width: 750px;
+            height: 580px;
+            /* border: 1px solid blueviolet; */
+            position: absolute;
+            left: 700px;
+            top: 200px;
+        }
+
+        .robo-div1 {
+            width: 310px;
+            height: 570px;
+            /* border: 1px solid blue; */
+
+
+        }
+
+        .robo-img1 {
+            margin-top: 45px;
+            animation: rob 3s linear infinite;
+
+        }
+
+        @keyframes rob {
+            0% {
+                margin-top: 45px;
+            }
+
+            50% {
+                margin-top: 10px;
+            }
+
+            60% {
+                margin-top: 10px;
+            }
+
+            100% {
+                margin-top: 45px;
+            }
+
+        }
+
+        .paint-div1 {
+            width: 350px;
+            height: 570px;
+            /* border: 1px solid greenyellow; */
+            position: absolute;
+            top: 1px;
+            left: 320px;
+        }
+
+        .paint-img1 {
+            margin-top: 140px;
+        }
+
+        .main2 {
+            width: 100%;
+            height: 1450px;
+
+        }
+
+        .hover-divs2 {
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 850px;
+            height: 750px;
+            /* border: 2px solid black; */
+            position: relative;
+        }
+
+        .hover-div2 {
+            width: 420px;
+            height: 680px;
+            /* border: 1px solid blue; */
+            position: absolute;
+        }
+
+        .advnc-div2 {
+            width: 350px;
+            height: 220px;
+            /* border: 1px solid green; */
+            margin-top: 100px;
+            margin-left: 40px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 13px silver;
+
+
+        }
+
+        #brain-icon2 {
+            font-size: 50px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .head-brain2 {
+            color: rgb(51, 51, 51);
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+
+        }
+
+        .advnc-div2:hover .head-brain2 {
+            color: white;
+            transition: 0.50s;
+
+        }
+
+        .para-brain2 {
+            color: rgb(107, 107, 107);
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+
+        }
+
+        .advnc-div2:hover .para-brain2 {
+            color: white;
+        }
+
+        .advnc-div2:hover {
+            background: linear-gradient(150deg, rgb(8, 196, 127), rgb(1, 162, 244));
+            color: white;
+
+        }
+
+        .ai-div2 {
+            width: 350px;
+            height: 220px;
+            /* border: 1px solid green; */
+            margin-top: 70px;
+            margin-left: 40px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 13px silver;
+        }
+
+        #book-icon2 {
+            font-size: 50px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .head-book2 {
+            color: rgb(51, 51, 51);
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+
+        }
+
+        .para-book2 {
+            color: rgb(107, 107, 107);
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+
+        }
+
+        .ai-div2:hover {
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            color: white;
+
+        }
+
+        .ai-div2:hover .head-book2 {
+            color: white;
+            transition: 0.50s;
+        }
+
+        .ai-div:hover .para-book2 {
+            color: white;
+        }
+
+        .hover-div22 {
+            width: 420px;
+            height: 680px;
+            /* border: 1px solid blue; */
+            position: absolute;
+            top: 0px;
+            left: 425px;
+        }
+
+        .cloud-div2 {
+            width: 350px;
+            height: 220px;
+            /* border: 1px solid green; */
+            margin-top: 170px;
+            margin-left: 40px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px silver;
+
+
+        }
+
+        #code-icon2 {
+            font-size: 50px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .head-code2 {
+            color: rgb(51, 51, 51);
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+
+        }
+
+        .para-code2 {
+            color: rgb(107, 107, 107);
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .cloud-div2:hover {
+            background: linear-gradient(150deg, rgb(8, 196, 127), rgb(1, 162, 244));
+            color: white;
+
+
+        }
+
+        .cloud-div2:hover .hov {
+            color: white;
+            transition: 0.50s;
+        }
+
+        .robotic-div2 {
+            width: 350px;
+            height: 220px;
+            /* border: 1px solid green; */
+            margin-top: 60px;
+            margin-left: 40px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 13px silver;
+        }
+
+        #train-icon2 {
+            font-size: 50px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .head-train2 {
+            color: rgb(51, 51, 51);
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .para-train2 {
+            color: rgb(107, 107, 107);
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .robotic-div2:hover {
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            color: white;
+        }
+
+        .robotic-div2:hover .hov {
+            color: white;
+            transition: 0.50s;
+
+        }
+
+        .power-div2 {
+            width: 600px;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin-left: 900px;
+            margin-top: -580px;
+
+        }
+
+        .power-div22 {
+            width: 580px;
+            height: 120px;
+            /* border: 1px solid green; */
+            position: relative;
+            /* top: 10px; */
+
+        }
+
+        .blugreen-div2 {
+            width: 162px;
+            position: absolute;
+            height: 10px;
+            background: linear-gradient(100deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            top: 35px;
+        }
+
+        .head-power2 {
+            font-size: 46px;
+            color: rgb(51, 51, 51);
+            font-weight: 600;
+            position: absolute;
+
+
+        }
+
+        .lorem-div2 {
+            width: 580px;
+            height: 300px;
+            /* border: 1px solid yellow; */
+        }
+
+        .para-lorem2 {
+            color: rgb(102, 102, 102);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+
+        }
+
+        .btn2 {
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            background: linear-gradient(100deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            margin-top: 50px;
+        }
+
+        .btn2:hover {
+            background: linear-gradient(100deg, rgb(9, 197, 127), rgb(2, 163, 242));
+            cursor: pointer;
+        }
+
+        .creat-div2 {
+            width: 700px;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+            margin-top: 200px;
+
+        }
+
+        .power-div222 {
+            width: 580px;
+            height: 120px;
+            /* border: 1px solid green; */
+            position: relative;
+            /* top: 10px; */
+
+        }
+
+        .blugreen-div22 {
+            width: 162px;
+            position: absolute;
+            height: 10px;
+            background: linear-gradient(100deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            top: 35px;
+        }
+
+        .head-power22 {
+            font-size: 40px;
+            color: rgb(51, 51, 51);
+            font-weight: 600;
+            position: absolute;
+
+
+        }
+
+        .lorem-div22 {
+            width: 580px;
+            height: 300px;
+            /* border: 1px solid yellow; */
+        }
+
+        .para-lorem22 {
+            color: rgb(102, 102, 102);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+
+        }
+
+        .btn22 {
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            background: linear-gradient(100deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            margin-top: 50px;
+        }
+
+        .btn22:hover {
+            background: linear-gradient(100deg, rgb(9, 197, 127), rgb(2, 163, 242));
+            cursor: pointer;
+        }
+
+        .img-about2 {
+            margin-left: 750px;
+            margin-top: -600px;
+        }
+
+        .main3 {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(360deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: relative;
+        }
+
+        .complete-div3 {
+            width: 15%;
+            height: 60%;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            background-image: url(./count-shape.png);
+            background-position: center;
+            background-size: cover;
+            background-position-y: 180px;
+
+        }
+
+        .head-cmplt3 {
+            color: white;
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        .para-cmplt3 {
+            color: white;
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .nlp-div3 {
+            width: 15%;
+            height: 60%;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 32%;
+            top: 20%;
+            background-image: url(./count-shape.png);
+            background-position: center;
+            background-size: cover;
+            background-position-y: 180px;
+
+        }
+
+        .head-nlp3 {
+            color: white;
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        .para-nlp3 {
+            color: white;
+            margin-left: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .satis-div3 {
+            width: 15%;
+            height: 60%;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 55%;
+            top: 20%;
+            background-image: url(./count-shape.png);
+            background-position: center;
+            background-size: cover;
+            background-position-y: 180px;
+
+        }
+
+        .head-satis3 {
+            color: white;
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        .para-satis3 {
+            color: white;
+            margin-left: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .ind-div3 {
+            width: 15%;
+            height: 60%;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 77%;
+            top: 20%;
+            background-image: url(./count-shape.png);
+            background-position: center;
+            background-size: cover;
+            background-position-y: 180px;
+
+        }
+
+        .head-ind3 {
+            color: white;
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 42px;
+            font-weight: 600;
+        }
+
+        .para-ind3 {
+            color: white;
+            margin-left: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .main4 {
+            width: 100%;
+            height: 1000px;
+            background-color: rgb(239, 241, 247);
+            padding: 1px;
+        }
+
+        .service-div4 {
+            padding: 1px;
+            width: 400px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 560px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .blu-green4 {
+            width: 150px;
+            height: 13px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 33px;
+            left: 110px;
+        }
+
+        .head-blugreen4 {
+            font-size: 42px;
+            font-weight: 600;
+            position: absolute;
+
+        }
+
+        .sixhover-div4 {
+            width: 1400px;
+            height: 700px;
+            /* border: 1px solid  red; */
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .threehover-div4 {
+            width: 1260px;
+            height: 330px;
+            /* border: 1px solid green; */
+            margin-top: 5px;
+            margin-left: 60px;
+            position: relative;
+        }
+
+        .first-div4 {
+            width: 390px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+
+        }
+
+        #brain-icon4 {
+            font-size: 60px;
+            margin-left: 160px;
+            margin-top: 50px;
+        }
+
+        .head-brain4 {
+            font-size: 22PX;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10PX;
+        }
+
+        .para-brain4 {
+            margin-top: 20px;
+            text-align: center;
+            /* color: rgb(105,105,105); */
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .first-div4:hover {
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .scnd-div4 {
+            width: 390px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 1px;
+            left: 430px;
+
+        }
+
+        #book-icon4 {
+            font-size: 60px;
+            margin-left: 160px;
+            margin-top: 50px;
+        }
+
+        .head-book4 {
+            font-size: 22PX;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10PX;
+        }
+
+        .para-book4 {
+            margin-top: 20px;
+            text-align: center;
+            /* color: rgb(105,105,105); */
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .scnd-div4:hover {
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .thrd-div4 {
+            width: 390px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 1px;
+            left: 860px;
+
+        }
+
+        #code-icon4 {
+            font-size: 60px;
+            margin-left: 160px;
+            margin-top: 50px;
+
+        }
+
+        .head-code4 {
+            font-size: 22PX;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10PX;
+        }
+
+        .para-code4 {
+            margin-top: 20px;
+            text-align: center;
+            /* color: rgb(105,105,105); */
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .thrd-div4:hover {
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .threehover-divs4 {
+            width: 1260px;
+            height: 330px;
+            /* border: 1px solid green; */
+            margin-top: 30px;
+            margin-left: 60px;
+            position: relative;
+        }
+
+        .first-divs4 {
+            width: 390px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+
+        }
+
+        #brain-icons4 {
+            font-size: 60px;
+            margin-left: 160px;
+            margin-top: 50px;
+        }
+
+        .head-brains4 {
+            font-size: 22PX;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10PX;
+        }
+
+        .para-brains4 {
+            margin-top: 20px;
+            text-align: center;
+            /* color: rgb(105,105,105); */
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .first-divs4:hover {
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .scnd-divs4 {
+            width: 390px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 1px;
+            left: 430px;
+
+        }
+
+        #book-icons4 {
+            font-size: 60px;
+            margin-left: 160px;
+            margin-top: 50px;
+        }
+
+        .head-books4 {
+            font-size: 22PX;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10PX;
+        }
+
+        .para-books4 {
+            margin-top: 20px;
+            text-align: center;
+            /* color: rgb(105,105,105); */
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .scnd-divs4:hover {
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .thrd-divs4 {
+            width: 390px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 1px;
+            left: 860px;
+
+        }
+
+        #code-icons4 {
+            font-size: 60px;
+            margin-left: 160px;
+            margin-top: 50px;
+
+        }
+
+        .head-codes4 {
+            font-size: 22PX;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10PX;
+        }
+
+        .para-codes4 {
+            margin-top: 20px;
+            text-align: center;
+            /* color: rgb(105,105,105); */
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .thrd-divs4:hover {
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .main5 {
+            width: 100%;
+            height: 800px;
+            background-color: white;
+        }
+
+        .project-div5 {
+            padding: 1px;
+            width: 400px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 550px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .blu-green5 {
+            width: 150px;
+            height: 13px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 33px;
+            left: 110px;
+        }
+
+        .head-blugreen5 {
+            font-size: 42px;
+            font-weight: 600;
+            position: absolute;
+
+        }
+
+        .slider-div5 {
+            width: 1290px;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin-left: 50px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider-div51 {
+            width: 2570px;
+            height: 490px;
+            /* border: 1px solid red; */
+            margin-top: 5px;
+            margin-left: 5px;
+            animation: slid5 20s infinite;
+
+
+
+
+
+        }
+
+        @keyframes slid5 {
+            0% {
+                margin-left: 0px;
+
+            }
+
+            25% {
+                margin-left: 0px;
+            }
+
+            27% {
+                margin-left: -420px;
+            }
+
+            50% {
+                margin-left: -420px;
+            }
+
+            52% {
+                margin-left: -850px;
+            }
+
+            75% {
+                margin-left: -850px;
+            }
+
+            77% {
+                margin-left: -1270px;
+            }
+
+            100% {
+                margin-left: -1270px;
+            }
+        }
+
+        .slider1 {
+            width: 400px;
+            height: 450px;
+            /* border: 1px solid blue; */
+            margin-left: 20px;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .slider1:hover .blugreen-div5 {
+            position: absolute;
+            width: 400px;
+            height: 448px;
+
+            background: linear-gradient(150deg, rgba(2, 162, 242, 0.571), rgba(9, 197, 128, 0.593));
+        }
+
+        .img-blugreen5 {
+            width: 400px;
+            height: 448px;
+
+        }
+
+        .white-div5 {
+            width: 250px;
+            height: 25px;
+            /* border: 1px solid purple;     */
+            position: absolute;
+            font-size: 22px;
+            font-weight: 600;
+            bottom: -26px;
+            left: 30px;
+        }
+
+        .slider1:hover .white-div5 {
+            color: white;
+            bottom: 10px;
+            transition: 0.5s;
+
+        }
+
+        .head-white5 {
+            font-size: 22px;
+        }
+
+        .white-div5:hover .head-white5 {
+            color: black;
+            cursor: pointer;
+        }
+
+
+
+        .main6 {
+            width: 100%;
+            height: 500px;
+            background-image: url(./partner-bg.jpg);
+            padding: 1px;
+            position: relative;
+        }
+
+        .email-div6 {
+            width: 1150px;
+            height: 370px;
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: -200px;
+            left: 140px;
+            box-shadow: .2px 0px 15px silver;
+        }
+
+        #msg-icon6 {
+            font-size: 200px;
+            margin-left: 50px;
+            margin-top: 120px;
+            color: rgba(2, 162, 242, 0.571);
+            /* background: linear-gradient(50deg,rgba(2, 162, 242, 0.571), rgba(9, 197, 128, 0.593)); */
+        }
+
+        .news-div6 {
+            padding: 1px;
+            width: 450px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 300px;
+            margin-top: -200px;
+            position: relative;
+        }
+
+        .blu-green6 {
+            width: 150px;
+            height: 13px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 33px;
+            /* left: 110px; */
+        }
+
+        .head-blugreen6 {
+            font-size: 42px;
+            font-weight: 600;
+            position: absolute;
+
+        }
+
+        .emailtext-div6 {
+            width: 600px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        .input6 {
+            width: 500px;
+            height: 50px;
+            margin-top: 15px;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-color: rgb(2, 163, 242);
+            outline: none;
+
+
+
+        }
+
+        .bluegreen-circle6 {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(10deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            border-radius: 25px;
+            margin-left: 500px;
+            margin-top: -50px;
+
+        }
+
+        #circle-icon6 {
+            font-size: 25px;
+            margin-left: 12px;
+            margin-top: 13px;
+            color: white;
+        }
+
+        .bluegreen-circle6:hover {
+            cursor: pointer;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        .img-div6 {
+            width: 1300px;
+            height: 70px;
+            /* border: 1px solid white; */
+            margin-top: 250px;
+            margin-left: 130px;
+        }
+
+        .png6 {
+            margin-left: 70px;
+            cursor: pointer;
+        }
+
+        .img-div7 {
+            width: 1000px;
+            height: 70px;
+            /* border: 1px solid white; */
+            margin-top: 50px;
+            margin-left: 230px;
+        }
+
+        .main7 {
+            width: 100%;
+            height: 600px;
+        }
+
+        .work-div7 {
+            padding: 1px;
+            width: 450px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 550px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .blu-green7 {
+            width: 150px;
+            height: 13px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 33px;
+            /* left: 110px; */
+        }
+
+        .head-blugreen7 {
+            font-size: 42px;
+            font-weight: 600;
+            position: absolute;
+
+        }
+
+        .data-generated7 {
+            width: 1320px;
+            height: 350px;
+            /* border: 1px solid black; */
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+
+        .data-gen7 {
+            width: 260px;
+            height: 300px;
+            /* border: 1px solid green; */
+            margin-left: 50px;
+            margin-top: 5px;
+            display: inline-block;
+
+        }
+
+        .head-gen7 {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            margin-top: 20px;
+        }
+
+        .data7 {
+            width: 253px;
+            height: 252px;
+            /* border: 1px solid blue; */
+            /* margin-left: 50px; */
+        }
+
+        .dotted-div7 {
+            width: 250px;
+            height: 250px;
+            border: 2px dotted rgb(2, 163, 242);
+            border-radius: 130px;
+            position: relative;
+        }
+
+        .scale-div7 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            transition: .5s;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+        }
+
+        .data7:hover .scale-div7 {
+            /* transform: scale(1.2); */
+            opacity: 1;
+            animation: aqu 1s linear infinite;
+
+        }
+
+        @keyframes aqu {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.3);
+            }
+        }
+
+        .data-div7 {
+            width: 200px;
+            height: 200px;
+            border-radius: 109px;
+            /* margin-left: 23px; */
+            /* margin-top: 23px; */
+            left: 23px;
+            top: 23px;
+            position: absolute;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+        }
+
+        #data-icon7 {
+            font-size: 100px;
+            margin-left: 50px;
+            margin-top: 55px;
+            color: white;
+        }
+
+        .dottedicon-div7 {
+            width: 1100px;
+            height: 60px;
+            /* border: 1px solid blue; */
+            margin-top: 10px;
+            margin-left: 250px;
+        }
+
+        .dotted-div71 {
+            width: 315px;
+            height: 50px;
+            /* border: 1px solid green; */
+            position: relative;
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        .dot-circle71 {
+            width: 40px;
+            height: 40px;
+            border: 2px dotted rgb(2, 163, 242);
+            border-radius: 50%;
+        }
+
+        .circle71 {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            border-radius: 50%;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+
+        #send7 {
+            color: rgb(9, 199, 120);
+            /* margin-left: 40px; */
+            /* margin-top: -60px; */
+            position: absolute;
+            top: 12px;
+            left: 45px;
+        }
+
+        .minus-div7 {
+            width: 250px;
+            height: 20px;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 62px;
+            top: 7px;
+        }
+
+        .minus-div7 {
+            color: rgb(2, 163, 242);
+        }
+
+        .dot-circle72 {
+            width: 40px;
+            height: 40px;
+            border: 2px dotted rgb(2, 163, 242);
+            border-radius: 50%;
+            margin-left: 310px;
+            margin-top: -35px;
+        }
+
+        .circle72 {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            border-radius: 50%;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+
+        .main8 {
+            width: 100%;
+            height: 120vh;
+            background-color: rgb(239, 241, 247);
+            padding: 1px;
+        }
+
+        .work-div8 {
+
+            width: 450px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 550px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .blu-green8 {
+            width: 150px;
+            height: 13px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 33px;
+            /* left: 110px; */
+        }
+
+        .head-blugreen8 {
+            font-size: 42px;
+            font-weight: 600;
+            position: absolute;
+
+        }
+
+        .slider-div8 {
+            width: 1330px;
+            height: 660px;
+            /* border: 1px solid black; */
+            margin-left: 100px;
+            margin-top: 50px;
+
+
+            overflow: hidden;
+        }
+
+        .slider8 {
+            width: 1770px;
+            height: 650px;
+            /* border: 1px solid red; */
+            margin-left: 0%;
+            /* margin-top: 5px; */
+            animation: slid8 5s linear infinite;
+        }
+
+        @keyframes slid8 {
+
+            0% {
+                margin-left: 0%;
+
+            }
+
+            25% {
+                margin-left: 0%;
+            }
+
+            47% {
+                margin-left: -33%;
+            }
+
+            90% {
+                margin-left: -33%;
+            }
+
+        }
+
+        .slider81 {
+            width: 400px;
+            height: 560px;
+            /* border: 1px solid green; */
+            display: inline-block;
+            margin-left: 30px;
+            background-color: white;
+        }
+
+        .back-image8 {
+            width: 398px;
+            height: 280px;
+            /* background-image: url(./2\ \(1\).jpg); */
+            background-repeat: no-repeat;
+        }
+
+        .nov8 {
+            width: 380px;
+            height: 30px;
+            /* border: 1px solid blue; */
+            margin-top: 20px;
+            margin-left: 10px;
+
+
+        }
+
+        .nov81 {
+            width: 120px;
+            height: 25px;
+            /* border: 1px solid red; */
+            display: inline-block;
+
+        }
+
+        #calender8 {
+            color: rgb(111, 201, 252);
+        }
+
+        .calender8 {
+            color: rgb(111, 201, 252);
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .para-clndr8 {
+            margin-top: -18px;
+            margin-left: 20px;
+            color: rgb(178, 178, 178);
+        }
+
+        .head-para8 {
+            width: 380px;
+            height: 150px;
+            /* border: 1px solid green; */
+            margin-left: 10px;
+        }
+
+        .head8 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-top: 10px;
+            transition: 0.36s;
+        }
+
+        .head8:hover {
+            color: rgb(9, 199, 120);
+            cursor: pointer;
+        }
+
+        .para8 {
+            color: rgb(102, 102, 102);
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+
+        .btn8 {
+            width: 170px;
+            height: 50px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            border-radius: 30px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .btn8:hover {
+            cursor: pointer;
+            background: linear-gradient(150deg, rgb(9, 197, 127), rgb(2, 163, 242));
+
+
+        }
+
+        .main9 {
+            width: 100%;
+            height: 90vh;
+            background-image: url(./contact-bg.jpg);
+            background-size: cover;
+            position: relative;
+            padding: 1px;
+        }
+
+        .contact-div9 {
+            width: 32%;
+            height: 90%;
+            background-color: white;
+            margin-left: 80px;
+            margin-top: -50px;
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        #location-icon9 {
+            color: rgba(9, 197, 128, 0.778);
+            font-size: 100px;
+            margin-left: 50px;
+        }
+
+        .cont-div9 {
+
+            width: 450px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-left: 50px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .blu-green9 {
+            width: 150px;
+            height: 13px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 33px;
+            /* left: 110px; */
+        }
+
+        .head-blugreen9 {
+            font-size: 42px;
+            font-weight: 600;
+            position: absolute;
+            color: rgb(51, 51, 51);
+
+        }
+
+        .us-div9 {
+            width: 350px;
+            height: 370px;
+            /* border: 1px solid black; */
+            margin-left: 50px;
+        }
+
+        .us91 {
+            width: 345px;
+            height: 100px;
+            /* border: 1px solid blue; */
+            position: relative;
+            margin-top: 20px;
+        }
+
+        #loc-icon9 {
+            color: rgb(2, 163, 242);
+            font-size: 25px;
+        }
+
+        .head-para9 {
+            position: absolute;
+            width: 300px;
+            height: 90px;
+            /* border: 1px solid green; */
+            left: 40px;
+            top: 1px;
+        }
+
+        .head-us9 {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(51, 51, 51);
+        }
+
+        .para-us9 {
+            color: rgb(102, 102, 102);
+            line-height: 26px;
+            margin-top: 10px;
+        }
+
+        .para-us9:hover {
+            cursor: pointer;
+            color: rgba(9, 197, 128, 0.912);
+            transition: 0.5s;
+        }
+
+        .inputs-div9 {
+            width: 800px;
+            height: 460px;
+            /* border: 1px solid white; */
+            margin-left: 630px;
+            margin-top: 80px;
+        }
+
+        .input91 {
+            width: 380px;
+            height: 50px;
+            background-color: rgb(80, 197, 224);
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            outline: none;
+            margin-top: 20px;
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 0 20px;
+
+        }
+
+        ::placeholder {
+            color: white;
+            font-size: 16px;
+
+        }
+
+
+        .text9 {
+            background-color: rgb(80, 197, 224);
+            border: none;
+            width: 775px;
+            height: 200px;
+            margin-top: 30px;
+            margin-left: 10px;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 20px;
+        }
+
+        .btn9 {
+            width: 775px;
+            height: 60px;
+            border-radius: 5px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 20px;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        .btn9:hover {
+            color: rgb(9, 199, 120);
+            cursor: pointer;
+            transition: 0.36s;
+        }
+
+        .main10 {
+            width: 100%;
+            height: 65vh;
+            background-image: url(./footer-bg.jpg);
+            padding: 1px;
+
+        }
+
+        .last-div10 {
+            width: 80%;
+            height: 70%;
+            /* border: 1px solid black; */
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .last10 {
+            width: 25%;
+            height: 60%;
+            /* border: 1px solid blue; */
+
+        }
+
+        .para-last1o {
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+            color: rgb(102, 102, 102);
+
+        }
+
+        .btn-10 {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            border-radius: 50%;
+            border: none;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #fb-icon10 {
+            color: white;
+            font-size: 20px;
+
+
+        }
+
+        .btn-10:hover {
+            background: linear-gradient(150deg, rgb(9, 197, 127), rgb(2, 163, 242));
+            cursor: pointer;
+
+        }
+        .work-hours-div{
+            width: 25%;
+            height: 60%;
+            /* border: 1px solid yellow; */
+            margin-left: 26%;
+            margin-top: -16.8%;
+        }
+         .workhours-div10 {
+
+            width: 200px;
+            height: 30px;
+            /* border: 1px solid blue; */
+            /* margin-left: 50px; */
+            /* margin-top: 30px; */
+            position: relative;
+        }
+
+        .blu-green10 {
+            width: 75px;
+            height: 8px;
+            background: linear-gradient(150deg, rgb(2, 163, 242), rgb(9, 197, 127));
+            position: absolute;
+            top: 13px;
+            /* left: 110px; */
+        }
+
+        .head-blugreen10 {
+            font-size: 20px;
+            font-weight: 600;
+            position: absolute;
+            color: rgb(51, 51, 51);
+
+        }
+        .para-last10{
+            margin-top: 25px;
+            color: rgb(102,102,102);
+        }
+        .navigate-10{
+            width: 220px;
+            height: 250px;
+            /* border: 1px solid red; */
+            margin-left: 630px;
+            margin-top: -204px;
+        }
+        .ul-div10{
+            width: 150px;
+            height: 200px;
+            /* border: 1px solid green; */
+        }
+        .ul10{
+            list-style: none;
+         }
+         .li10{
+            color:  rgb(102,102,102);
+            line-height: 35px;
+         }
+         .li10:hover{
+            color:rgb(1, 160, 249);
+            cursor: pointer;
+            transition: 0.36s;
+
+         }
+         .ul10-div{
+            width: 60px;
+            height: 150px;
+            /* border: 1px solid green; */
+            margin-left: 150px;
+            margin-top: -200px;
+         }
+         .ul-10{
+            list-style: none;
+
+         }
+         .li-10{
+            color:  rgb(102,102,102);
+            line-height: 35px;
+         }
+         .li-10:hover{
+            color:rgb(1, 160, 249);
+            cursor: pointer;
+            transition: 0.36s;
+         }
+         .tos-di10{
+            width: 250px;
+            height: 200px;
+            /* border: 1px solid blue; */
+            margin-left: 905px;
+            margin-top: -250px;
+         }
+         .tos10{
+            width: 150px;
+            height: 150px;
+            /* border: 1px solid green; */
+         }
+         .ul-tos10{
+            list-style: none;
+         }
+         .li-tos10{
+            color:  rgb(102,102,102);
+            line-height: 35px;
+         }
+         .li-tos10:hover{
+            color:rgb(1, 160, 249);
+            cursor: pointer;
+            transition: 0.36s;
+         }
+         .line-div{
+            width: 100%;
+            height: 1px;
+            background-color: rgb(227,229,234);
+            margin-top: 10px;
+         }
+         .text-div{
+            width: 250px;
+            height: 20px;
+            /* border: 1px solid brown; */
+            margin: auto;
+            margin-top: 20px;
+         }
+         .para-text{
+            color: rgb(51, 51, 51);
+            font-size: 14px;
+            font-weight: 400;
+
+         }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main1">
+        <div class="uper-div1">
+            <div class="div-msgicon">
+                <div class="uper1">
+                    <i id="msg-icon1" class="fa-solid fa-square-envelope"></i>
+                    <p class="para-icon1">icon@yourwebsite.com</p>
+
+                </div>
+                <div class="uper12">
+                    <i id="call-icon1" class="fa-solid fa-phone"></i>
+                    <p class="para-call1">(+123) 45678</p>
+                </div>
+
+            </div>
+            <div class="uper-icondiv1">
+                <i id="fb-icon1" class="fa-brands fa-facebook-f"></i>
+                <i id="g-icon1" class="fa-brands fa-google-plus-g"></i>
+                <i id="tr-icon1" class="fa-brands fa-twitter"></i>
+                <i id="in-icon1" class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <div class="navbar1">
+            <img class="nav-img1" src="./logo-white.png" alt="">
+            <div class="nav1">
+                <ul class="ul1">
+                    <li class="list1"><a href="">Home</a></li>
+                    <li class="list1"><a href="">About</a></li>
+                    <li class="list1"><a href="">Features</a></li>
+                    <li class="list1"><a href="">Pages</a></li>
+                    <li class="list1"><a href="">Shop</a></li>
+                    <li class="list1"><a href="">Blog</a></li>
+                    <li class="list1"><a href="">Contact</a></li>
+
+                </ul>
+                <div class="bagsearch-div1">
+                    <div class="bag-div1">
+                        <i id="bag-icon1" class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="search-div1">
+                        <i id="search-icon1" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aimachine-div1">
+            <h1 class="head-aimachine1">AI & Machine <br> Learning
+                Products <br> Creators
+            </h1>
+            <p class="para-aimachine1">Innovative Machine Learning
+                Products and services <br> on a trusted Platforms.
+            </p>
+            <div class="learnjoin1">
+                <div class="learn1">
+                    <p class="para-learn1">LEARN MORE</p>
+                </div>
+                <div class="joinnow1">
+                    <p class="para-join1">JOIN NOW</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-div1">
+            <div class="robo-div1">
+                <img class="robo-img1" src="./sl1-ly1.png" alt="">
+            </div>
+            <div class="paint-div1">
+                <img class="paint-img1" src="./sl1-ly2.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="hover-divs2">
+            <div class="hover-div2">
+                <div class="advnc-div2">
+                    <i id="brain-icon2" class="fa-solid fa-brain"></i>
+                    <h1 class="head-brain2 ">Advanced Programing</h1>
+                    <p class="para-brain2 ">Find out Whats Working and
+                        Whats not Dig Your Data to Find</p>
+                </div>
+                <div class="ai-div2">
+                    <i id="book-icon2" class="fa-brands fa-accusoft"></i>
+                    <h1 class="head-book2">Ai Chippest</h1>
+                    <p class="para-book2">Find out Whats Working and
+                        Whats not Dig Your Data to Find</p>
+                </div>
+            </div>
+            <div class="hover-div22">
+                <div class="cloud-div2">
+                    <i id="code-icon2" class="fa-solid fa-code-branch"></i>
+                    <h1 class="head-code2 hov">Cloud Ai Integration</h1>
+                    <p class="para-code2 hov">Find out Whats Working and
+                        Whats not Dig Your Data to Find</p>
+                </div>
+                <div class="robotic-div2">
+                    <i id="train-icon2" class="fa-solid fa-train-tram"></i>
+                    <H1 class="head-train2 hov">Robotic Arm</H1>
+                    <p class="para-train2 hov">Find out Whats Working and
+                        Whats not Dig Your Data to Find</p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="power-div2">
+            <div class="power-div22">
+                <div class="blugreen-div2"></div>
+                <h1 class="head-power2">Power Your Creativity With
+                    Artificial Intelligence</h1>
+            </div>
+            <div class="lorem-div2">
+                <p class="para-lorem2">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Duis at dictum risus, <br>
+                    non suscipit arcu. Quisque aliquam posuere tortor,
+                    sit amet convallis nunc scelerisque in.<br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Labore eius molesti ae facere, natus
+                    reprehenderit eaque eum, autem ipsam. Magni, error.
+                    Tem pora odit laborum iure inventore possimus
+                    laboriosam qui nam. Fugit!
+
+                </p>
+                <button class="btn2">LEARN MORE</button>
+            </div>
+        </div>
+
+        <div class="creat-div2">
+            <div class="power-div222">
+                <div class="blugreen-div22"></div>
+                <h1 class="head-power22">We Create The Most Realistic Artificial Intelligence</h1>
+            </div>
+            <div class="lorem-div22">
+                <p class="para-lorem22">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Duis at dictum risus,
+                    non suscipit arcu. Quisque aliquam posuere tortor,
+                    sit amet convallis nunc scelerisque in.<br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Labore eius molesti ae facere, natus
+                    reprehenderit eaque eum, autem ipsam. Magni, error.
+                    Tem pora odit laborum iure inventore possimus
+                    laboriosam qui nam. Fugit!
+
+                </p>
+                <button class="btn22">LEARN MORE</button>
+            </div>
+        </div>
+        <img class="img-about2" src="./about-video-part.png" alt="">
+    </div>
+
+    <div class="main3">
+        <div class="complete-div3">
+            <h1 class="head-cmplt3">6000 +</h1>
+            <p class="para-cmplt3">Complete Prorject</p>
+        </div>
+        <div class="nlp-div3">
+            <h1 class="head-nlp3">400 +</h1>
+            <p class="para-nlp3">NLP Experts</p>
+        </div>
+        <div class="satis-div3">
+            <h1 class="head-satis3">3500 +</h1>
+            <p class="para-satis3">Satisfied Clients</p>
+        </div>
+        <div class="ind-div3">
+            <h1 class="head-ind3">8000 +</h1>
+            <p class="para-ind3">Industries Served</p>
+        </div>
+    </div>
+
+    <div class="main4">
+        <div class="service-div4">
+            <div class="blu-green4"></div>
+            <h1 class="head-blugreen4">Our Core Services</h1>
+        </div>
+        <div class="sixhover-div4">
+            <div class="threehover-div4">
+                <div class="first-div4">
+                    <i id="brain-icon4" class="fa-solid  fa-brain"></i>
+                    <h1 class="head-brain4">Virtual Personal Assitants</h1>
+                    <p class="para-brain4">Capitalize on low hanging
+                        fruit to identify a ball park value added
+                        activity to beta test. Override the digital divide
+                        with additional</p>
+                </div>
+
+                <div class="scnd-div4">
+                    <i id="book-icon4" class="fa-brands fa-accusoft"></i>
+                    <h1 class="head-book4">Video Surveilence</h1>
+                    <p class="para-book4">Capitalize on low hanging
+                        fruit to identify a ball park value added
+                        activity to beta test. Override the digital divide
+                        with additional</p>
+                </div>
+
+                <div class="thrd-div4">
+                    <i id="code-icon4" class="fa-solid fa-code-branch"></i>
+                    <h1 class="head-code4">Social Media Services</h1>
+                    <p class="para-code4">Capitalize on low hanging
+                        fruit to identify a ball park value added
+                        activity to beta test. Override the digital divide
+                        with additional</p>
+                </div>
+            </div>
+
+            <div class="threehover-divs4">
+                <div class="first-divs4">
+                    <i id="brain-icons4" class="fa-solid  fa-brain"></i>
+                    <h1 class="head-brains4">Online Customer Support
+                    </h1>
+                    <p class="para-brains4">Capitalize on low hanging
+                        fruit to identify a ball park value added
+                        activity to beta test. Override the digital divide
+                        with additional</p>
+                </div>
+
+                <div class="scnd-divs4">
+                    <i id="book-icons4" class="fa-brands fa-accusoft"></i>
+                    <h1 class="head-books4">Search Engine Result Refining</h1>
+                    <p class="para-books4">Capitalize on low hanging
+                        fruit to identify a ball park value added
+                        activity to beta test. Override the digital divide
+                        with additional</p>
+                </div>
+
+                <div class="thrd-divs4">
+                    <i id="code-icons4" class="fa-solid fa-code-branch"></i>
+                    <h1 class="head-codes4">Online Fraud Detection</h1>
+                    <p class="para-codes4">Capitalize on low hanging
+                        fruit to identify a ball park value added
+                        activity to beta test. Override the digital divide
+                        with additional</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main5">
+        <div class="project-div5">
+            <div class="blu-green5"></div>
+            <h1 class="head-blugreen5">Our Latest Projects</h1>
+        </div>
+
+        <div class="slider-div5">
+            <div class="slider-div51">
+
+                <div class="slider1">
+                    <div class="blugreen-div5"></div>
+                    <img class="img-blugreen5" src="./1.jpg" alt="">
+                    <div class="white-div5">
+                        <h1 class="head-white5">Vocal Avatar API</h1>
+                    </div>
+                </div>
+
+                <div class="slider1">
+                    <div class="blugreen-div5"></div>
+                    <img class="img-blugreen5" src="./1.jpg" alt="">
+                    <div class="white-div5">
+                        <h1 class="head-white5">Vocal Avatar API</h1>
+                    </div>
+                </div>
+
+                <div class="slider1">
+                    <div class="blugreen-div5"></div>
+                    <img class="img-blugreen5" src="./1.jpg" alt="">
+                    <div class="white-div5">
+                        <h1 class="head-white5">Vocal Avatar API</h1>
+                    </div>
+                </div>
+
+
+
+                <div class="slider1">
+                    <div class="blugreen-div5"></div>
+                    <img class="img-blugreen5" src="./3.jpg" alt="">
+                    <div class="white-div5">
+                        <h1 class="head-white5">Vocal Avatar API</h1>
+                    </div>
+                </div>
+
+                <div class="slider1">
+                    <div class="blugreen-div5"></div>
+                    <img class="img-blugreen5" src="./3.jpg" alt="">
+                    <div class="white-div5">
+                        <h1 class="head-white5">Vocal Avatar API</h1>
+                    </div>
+                </div>
+
+
+                <div class="slider1">
+                    <div class="blugreen-div5"></div>
+                    <img class="img-blugreen5" src="./3.jpg" alt="">
+                    <div class="white-div5">
+                        <h1 class="head-white5">Vocal Avatar API</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main6">
+        <div class="email-div6">
+            <i id="msg-icon6" class="fa-solid fa-envelope-open"></i>
+            <div class="news-div6">
+                <div class="blu-green6"></div>
+                <h1 class="head-blugreen6">Don’t Miss Our News
+                    And Updates!
+                </h1>
+            </div>
+            <div class="emailtext-div6">
+                <input class="input6" type="text" placeholder="Enter Your Email">
+                <div class="bluegreen-circle6">
+                    <i id="circle-icon6" class="fa-solid fa-location-arrow"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="img-div6">
+            <img src="./1.png" alt="">
+            <img class="png6" src="./2.png" alt="">
+            <img class="png6" src="./3.png" alt="">
+            <img class="png6" src="./4.png" alt="">
+            <img class="png6" src="./5.png" alt="">
+
+        </div>
+
+        <div class="img-div7">
+            <img src="./1.png" alt="">
+            <img class="png6" src="./2.png" alt="">
+            <img class="png6" src="./3.png" alt="">
+            <img class="png6" src="./4.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="main7">
+        <div class="work-div7">
+            <div class="blu-green7"></div>
+            <h1 class="head-blugreen7">How We Works</h1>
+        </div>
+        <div class="data-generated7">
+            <div class="data-gen7">
+
+                <div class="data7">
+                    <div class="dotted-div7">
+                        <div class="scale-div7"></div>
+                        <div class="data-div7">
+                            <i id="data-icon7" class="fa-solid fa-fingerprint"></i>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="head-gen7">Data Generated</h1>
+            </div>
+
+            <div class="data-gen7">
+
+                <div class="data7">
+                    <div class="dotted-div7">
+                        <div class="scale-div7"></div>
+                        <div class="data-div7">
+                            <i id="data-icon7" class="fa-solid fa-fingerprint"></i>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="head-gen7">Data Stored</h1>
+            </div>
+
+            <div class="data-gen7">
+
+                <div class="data7">
+                    <div class="dotted-div7">
+                        <div class="scale-div7"></div>
+                        <div class="data-div7">
+                            <i id="data-icon7" class="fa-solid fa-fingerprint"></i>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="head-gen7">Data Processing</h1>
+            </div>
+
+            <div class="data-gen7">
+
+                <div class="data7">
+                    <div class="dotted-div7">
+                        <div class="scale-div7"></div>
+                        <div class="data-div7">
+                            <i id="data-icon7" class="fa-solid fa-fingerprint"></i>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="head-gen7">Actionable Insights</h1>
+            </div>
+        </div>
+
+        <div class="dottedicon-div7">
+            <div class="dotted-div71">
+                <div class="dot-circle71">
+                    <div class="circle71"></div>
+                    <i id="send7" class="fa-solid fa-share"></i>
+                    <div class="minus-div7">
+                        <p class="para-minus7">----------------------------------------------</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dotted-div71">
+                <div class="dot-circle71">
+                    <div class="circle71"></div>
+                    <i id="send7" class="fa-solid fa-share"></i>
+                    <div class="minus-div7">
+                        <p class="para-minus7">----------------------------------------------</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dotted-div71">
+                <div class="dot-circle71">
+                    <div class="circle71"></div>
+                    <i id="send7" class="fa-solid fa-share"></i>
+                    <div class="minus-div7">
+                        <p class="para-minus7">----------------------------------------------</p>
+                    </div>
+                    <div class="dot-circle72">
+                        <div class="circle72"></div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="main8">
+        <div class="work-div8">
+            <div class="blu-green8"></div>
+            <h1 class="head-blugreen8">How We Works</h1>
+        </div>
+
+        <div class="slider-div8">
+            <div class="slider8">
+                <div class="slider81">
+
+                    <img class="back-image8" src="./2 (1).jpg" alt="">
+
+                    <div class="nov8">
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-calendar-day"></i>
+                            <p class="para-clndr8">Nov 28,2019</p>
+                        </div>
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-lock"></i>
+                            <p class="para-clndr8">Admin</p>
+                        </div>
+                        <div class="nov81">
+                            <p class="calender8">10</p>
+                            <p class="para-clndr8">Comments</p>
+                        </div>
+                    </div>
+                    <div class="head-para8">
+                        <h1 class="head8">Man in Red Plaid
+                            Shirt Talking On Phone Terrace</h1>
+                        <p class="para8">The Tutorial Covers
+                            example of identification and Rew
+                            Garfield and verifies if picture</p>
+                    </div>
+                    <button class="btn8">Read More</button>
+                </div>
+
+                <div class="slider81">
+
+                    <img class="back-image8" src="./1 (1).jpg" alt="">
+
+                    <div class="nov8">
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-calendar-day"></i>
+                            <p class="para-clndr8">Nov 28,2019</p>
+                        </div>
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-lock"></i>
+                            <p class="para-clndr8">Admin</p>
+                        </div>
+                        <div class="nov81">
+                            <p class="calender8">10</p>
+                            <p class="para-clndr8">Comments</p>
+                        </div>
+                    </div>
+                    <div class="head-para8">
+                        <h1 class="head8">Man in Red Plaid
+                            Shirt Talking On Phone Terrace</h1>
+                        <p class="para8">The Tutorial Covers
+                            example of identification and Rew
+                            Garfield and verifies if picture</p>
+                    </div>
+                    <button class="btn8">Read More</button>
+                </div>
+
+                <div class="slider81">
+
+                    <img class="back-image8" src="./2 (1).jpg" alt="">
+
+                    <div class="nov8">
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-calendar-day"></i>
+                            <p class="para-clndr8">Nov 28,2019</p>
+                        </div>
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-lock"></i>
+                            <p class="para-clndr8">Admin</p>
+                        </div>
+                        <div class="nov81">
+                            <p class="calender8">10</p>
+                            <p class="para-clndr8">Comments</p>
+                        </div>
+                    </div>
+                    <div class="head-para8">
+                        <h1 class="head8">Man in Red Plaid
+                            Shirt Talking On Phone Terrace</h1>
+                        <p class="para8">The Tutorial Covers
+                            example of identification and Rew
+                            Garfield and verifies if picture</p>
+                    </div>
+                    <button class="btn8">Read More</button>
+                </div>
+
+                <div class="slider81">
+
+                    <img class="back-image8" src="./3 (1).jpg" alt="">
+
+                    <div class="nov8">
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-calendar-day"></i>
+                            <p class="para-clndr8">Nov 28,2019</p>
+                        </div>
+                        <div class="nov81">
+                            <i id="calender8" class="fa-solid fa-lock"></i>
+                            <p class="para-clndr8">Admin</p>
+                        </div>
+                        <div class="nov81">
+                            <p class="calender8">10</p>
+                            <p class="para-clndr8">Comments</p>
+                        </div>
+                    </div>
+                    <div class="head-para8">
+                        <h1 class="head8">Man in Red Plaid
+                            Shirt Talking On Phone Terrace</h1>
+                        <p class="para8">The Tutorial Covers
+                            example of identification and Rew
+                            Garfield and verifies if picture</p>
+                    </div>
+                    <button class="btn8">Read More</button>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main9">
+        <div class="contact-div9">
+            <i id="location-icon9" class="fa-solid fa-map-location-dot"></i>
+            <div class="cont-div9">
+                <div class="blu-green9"></div>
+                <h1 class="head-blugreen9">Contact With Us</h1>
+            </div>
+            <div class="us-div9">
+                <div class="us91">
+                    <i id="loc-icon9" class="fa-solid fa-location-dot"></i>
+                    <div class="head-para9">
+                        <h1 class="head-us9">Visit Us</h1>
+                        <p class="para-us9">530 Old BUffalo Street <br>
+                            Northwest #205, New York - 3087</p>
+                    </div>
+                </div>
+
+                <div class="us91">
+                    <i id="loc-icon9" class="fa-solid fa-mobile-screen-button"></i>
+                    <div class="head-para9">
+                        <h1 class="head-us9">Call us</h1>
+                        <p class="para-us9">+1 (123) -(456-789 <br>+1 (123) -(456-789
+                        </p>
+                    </div>
+                </div>
+                <div class="us91">
+                    <i id="loc-icon9" class="fa-solid fa-envelope-open-text"></i>
+                    <div class="head-para9">
+                        <h1 class="head-us9">Email Us</h1>
+                        <p class="para-us9">infoname@gmail.com <br>www.yourname.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inputs-div9">
+            <input class="input91" type="text" placeholder="Name">
+            <input class="input91" type="text" placeholder="E-mail">
+            <input class="input91" type="text" placeholder="Phone Number">
+            <input class="input91" type="text" placeholder="Subject">
+            <textarea class="text9" name="text" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+            <button class="btn9">Submitt Now !</button>
+        </div>
+
+
+    </div>
+
+    <div class="main10">
+        <div class="last-div10">
+            <div class="last10">
+                <img src="./logo.png" alt="">
+                <p class="para-last1o">Lorem ipsum dolor sit amet, conse turini <br>
+                    adipiscing elit, sed do eiusmod tempor <br> in cididunt ut labore.</p>
+                <button class="btn-10">
+                    <i id="fb-icon10" class="fa-brands fa-facebook-f"></i>
+                </button>
+                <button class="btn-10">
+                    <i id="fb-icon10" class="fa-brands fa-instagram"></i>
+                </button>
+                </button>
+                <button class="btn-10">
+                    <i id="fb-icon10" class="fa-brands fa-twitter"></i>
+                </button>
+            </div>
+
+            <div class="work-hours-div">
+                <div class="workhours-div10">
+                    <div class="blu-green10"></div>
+                    <h1 class="head-blugreen10">WORK HOURS</h1>
+                </div>
+                <p class="para-last10">10.00 AM - 6.00 PM , Monday - Saturday
+                    <br><br>
+
+
+                    Our Support and Sales team is available 24 * 7 to answer
+                     your queries</p>
+            </div>
+
+            <div class="navigate-10">
+                <div class="workhours-div10">
+                    <div class="blu-green10"></div>
+                    <h1 class="head-blugreen10">NAVIGATE</h1>
+
+                </div>
+                <div class="ul-div10">
+                    <ul class="ul10">
+                        <li class="li10">About us</li>
+                        <li class="li10">Features</li>
+                        <li class="li10">Mobile App</li>
+                        <li class="li10">Software Demo</li>
+                        <li class="li10">Software Download</li>
+                    </ul>
+                </div>
+                <div class="ul10-div">
+                    <ul class="ul-10">
+                        <li class="li-10">Blog</li>
+                        <li class="li-10">Team</li>
+                        <li class="li-10">Chatbot</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="tos-di10">
+                <div class="workhours-div10">
+                    <div class="blu-green10"></div>
+                    <h1 class="head-blugreen10">PRIVACY & TOS</h1>
+
+                </div>
+                <div class="tos10">
+                    <ul class="ul-tos10">
+                        <li class="li-tos10">Privacy</li>
+                        <li class="li-tos10">Contact</li>
+                        <li class="li-tos10">Login</li>
+                        <li class="li-tos10">Register</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="line-div"></div>
+        <div class="text-div">
+            <p class="para-text">© Copyrights 2019 AuburnForest</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
